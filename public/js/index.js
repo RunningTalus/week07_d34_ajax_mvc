@@ -1,3 +1,8 @@
-//this will be rendered on the client-side
+$(function(){
 
-console.log("test from public/js/index.js");
+	$('#weather').on('click', function(){
+		console.log('let\'s get the weather');
+		return false;
+	});
+});
+
