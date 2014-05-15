@@ -1,8 +1,9 @@
 $(function(){
 
 	$('#weather').on('click', function(){
-		console.log('let\'s get the weather');
-		return false;
+		console.log('Success!');
+		console.log('data is...', data);
 	});
-});
 
+	return false;
+});
