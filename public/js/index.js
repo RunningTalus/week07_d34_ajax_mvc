@@ -1,8 +1,10 @@
 $(function(){
 
 	$('#weather').on('click', function(){
-		console.log('Success!');
-		console.log('data is...', data);
+		
+		$.get('/weather', function(data) {
+			$('body').append('  - The temperature is: ' + data.temperature);
+		});
 	});
 
 	return false;
